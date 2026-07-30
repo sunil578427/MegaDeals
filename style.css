@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #111;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #131921;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #232f3e 0%, #37475a 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+}
+
+.hero-banner h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  
+}
+
+.hero-banner p {
+    font-size: 14px;
+    color: #febd69;
+    font-weight: bold;
+}
+
+/* Container & Title */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    border-left: 4px solid #ff9900;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/* Card Style */
+.card {
+    background: white;
+    border: 1px solid #e3e6e6;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge {
+    background-color: #cc0c39;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #565959;
+    margin-bottom: 15px;
+}
+
+/* Thumbnail Grid inside Card */
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.thumb-item {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+}
+
+.thumb-item img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.thumb-item span {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Amazon Button */
+.btn-amazon {
+    display: block;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    color: #0f1111;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-amazon:hover {
+    background-color: #f7ca00;
+}
+
+/*hhhhhhh*/
+/* ==========================================
+   HEADER SECTION DESIGN (Mobile & Desktop)
+   ========================================== */
+
+/* 1. Header Container (Dark Theme) */
+.custom-header {
+  background-color: #0f172a !important; /* Dark Navy Blue */
+  padding: 12px 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  width: 100% !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+/* 2. Flexbox Alignment */
+.header-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* 3. Brand Logo & Title */
+.brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.logo-icon {
+  font-size: 22px !important;
+  line-height: 1 !important;
+}
+
+.brand-name {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: -0.3px !important;
+  line-height: 1 !important;
+}
+
+.brand-name .highlight {
+  color: #ff9900 !important; /* Amazon Orange Accent */
+}
+
+/* 4. Affiliate Tag / Badge */
+.affiliate-tag {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.affiliate-tag span {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  color: #94a3b8 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding: 5px 12px !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  white-space: nowrap !important;
+}
+
+/* ==========================================
+   MOBILE OPTIMIZATION (फ़ोन के लिए स्पेशल)
+   ========================================== */
+@media (max-width: 600px) {
+  .custom-header {
+    padding: 10px 12px !important;
+  }
+
+  .logo-icon {
+    font-size: 18px !important;
+  }
+
+  .brand-name {
+    font-size: 16px !important;
+  }
+
+  .affiliate-tag span {
+    font-size: 9px !important;
+    padding: 4px 8px !important;
+  }
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT & CONTAINER SIZING
+   ========================================== */
+
+/* 1. Main Outer Container Fix */
+.container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 24px auto !important;
+  padding: 0 16px !important;
+}
+
+/* 2. Grid Columns Setup for Desktop */
+#collections-grid, 
+.grid-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important; /* डेस्कटॉप पर 3 कॉलम बराबर */
+  gap: 20px !important;
+  width: 100% !important;
+}
+
+/* 3. Card Fixed Height & Alignment */
+#collections-grid > div,
+.collection-card {
+  width: 100% !important;
+  min-height: 380px !important; /* हर कार्ड की हाइट सेम रहेगी */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+}
+
+  /* 4. Inside Previews Grid & Image Height Fix */
+#collections-grid > div > div:nth-child(4),
+.previews-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important; /* 3 इमेज एक लाइन में */
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 12px 0 !important;
+}
+
+#collections-grid img {
+  width: 100% !important;
+  height: 65px !important; /* इमेजेस की फिक्स हाइट ताकि कार्ड की शेप न बिगड़े */
+  object-fit: contain !important;
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  padding: 4px !important;
+}
+
+/* 5. Title & Subtitle Truncate (अगर टेक्स्ट बड़ा हो तो लेआउट न बिगड़े) */
+#collections-grid h3,
+.collection-card h3 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin-bottom: 4px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#collections-grid p,
+.collection-card p {
+  font-size: 12px !important;
+  color: #64748b !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* ==========================================
+   TABLET & MOBILE BREAKPOINTS
+   ========================================== */
+
+/* Tablet View (900px से छोटे स्क्रीन) */
+@media (max-width: 900px) {
+  #collections-grid, 
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr) !important; /* टैबलेट पर 2 कॉलम */
+    gap: 16px !important;
+  }
+}
+
+/* Mobile View (600px से छोटे स्क्रीन) */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px !important;
+    margin: 16px auto !important;
+  }
+
+  #collections-grid, 
+  .grid-container {
+    grid-template-columns: 1fr !important; /* मोबाइल पर 1 कॉलम पूरी चौड़ाई में */
+    gap: 16px !important;
+  }
+
+  #collections-grid > div,
+  .collection-card {
+    min-height: auto !important; /* मोबाइल पर हाइट ऑटो एडजस्ट होगी */
+    padding: 14px !important;
+  }
+
+  #collections-grid img {
+    height: 60px !important; /* मोबाइल पर फोटो की परफेक्ट हाइट */
+  }
+}
+
+
+/* ==========================================
+   FIX GAP & INCREASE IMAGE HEIGHT
+   ========================================== */
+
+/* 1. कार्ड की फिक्स हाइट हटाकर गैप खत्म करना */
+#collections-grid > div,
+.collection-card {
+  min-height: auto !important; /* फिक्स हाइट हटाई ताकि फालतू गैप न बने */
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 16px !important;
+}
+
+/* 2. इमेजेस की हाइट बढ़ाना और प्रॉपर फिट करना */
+#collections-grid img {
+  width: 100% !important;
+  height: 90px !important; /* इमेजेस की हाइट 65px से बढ़ाकर 90px कर दी */
+  object-fit: contain !important;
+  background-color: #f8fafc !important;
+  border-radius: 8px !important;
+  padding: 4px !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* 3. Previews ग्रिड का मार्जिन सेट करना */
+#collections-grid > div > div:nth-child(4),
+.previews-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px !important;
+  margin-top: 10px !important;
+  margin-bottom: 14px !important; /* बटन और इमेजेस के बीच का गैप फिक्स */
+}
+
+/* 4. बटन को तुरंत इमेजेस के नीचे सेट करना */
+#collections-grid a,
+.btn-amazon {
+  margin-top: 0 !important; /* ऊपर का फालतू गैप हटाया */
+  display: block !important;
+  width: 100% !important;
+  padding: 10px 12px !important;
+}
+
